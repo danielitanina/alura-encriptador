@@ -1,0 +1,253 @@
+* {
+  background-image:
+url("https://img.freepik.com/vector-gratis/fondo-rosa-verde-degradado_23-2150284423.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  margin-left: 40px;
+  padding: 8px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  padding-left: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #1b3c73;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.section1, .section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  min-height: 50vh;
+}
+
+.section1 {
+  width: 60%;
+}
+
+.section2 {
+  width: 40%;
+}
+
+.textoUsuario {
+  width: 80%;
+  resize: none;
+  border: none;
+  height: 70%;
+  color: #1b3c73;
+  font-size: 1.5rem;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  color: gray;
+  font-size: 1.4rem;
+  text-transform: none;
+}
+
+#botones {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.centrar-botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.boton-encriptar {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #1b3c73;
+  background: #1b3c73;
+  border-radius: 18px;
+  color: #dff5ff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.boton-desencriptar {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #1b3c73;
+  background: #dff5ff;
+  border-radius: 18px;
+  color: #1b3c73;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.boton-encriptar:hover {
+  background-color: #9fd5d1;
+  color: #1b3c73;
+}
+
+.boton-desencriptar:hover {
+  background-color: #9fd5d1;
+}
+
+.nota p {
+  font-size: 1rem;
+  color: #1b3c73;
+}
+
+.contenedor-section2 {
+  background: #dff5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  height: 90vh;
+}
+
+.textoEncriptado {
+  background: #dff5ff;
+  background-image: url(assets/Muñeco.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  border: none;
+  border-radius: 24px;
+  color: #1b3c73;
+  font-size: 22px;
+  height: 60vh;
+  width: auto;
+  padding-top: 10px;
+  resize: none;
+  margin: 10px;
+  box-sizing: border-box;
+  top: auto;
+}
+
+.textoEncriptado:focus {
+  outline: none;
+}
+
+.titulo-mensaje {
+  width: 70%;
+  text-align: center;
+  background: #dff5ff;
+  padding-bottom: 10px;
+}
+
+.parrafo-mensaje {
+  width: 70%;
+  text-align: center;
+  background: #dff5ff;
+  font-size: 14px;
+}
+
+.boton-copiar {
+  text-align: center;
+  margin: auto;
+  background: #dff5ff;
+}
+
+#boton-copiar {
+  display: none;
+}
+
+.copiar {
+  border: 1px solid #dff5ff;
+  border-radius: 18px;
+  color: #1b3c73;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  main {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+
+  .section1, .section2 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .textoEncriptado {
+    background-image: none;
+    height: auto;
+  }
+
+  .contenedor-section2 {
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .section1, .section2 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .textoEncriptado {
+    background-image: none;
+    height: auto;
+    width: 90%;
+  }
+
+  .contenedor-section2 {
+    height: auto;
+    width: 90%;
+  }
+}
+
+ 
+
+
+
+
+

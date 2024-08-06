@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="assets/Logo.png" alt="logo de alura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </header>
+  <main>
+    <section class="section1">
+      <div class="textarea">
+      <textarea class="textoUsuario" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>     
+      </div>
+      <div class="nota">
+        <p>*Solo letras minúsculas y sin acentos.</p>
+        <div class="centrar-botones">
+        <button id="botones" class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+        <button id="botones" class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="contenedor-section2">   
+        <textarea class="textoEncriptado" cols="30" rows="10" readonly></textarea>
+          <h3 id="titulo-mensaje" class="titulo-mensaje">Ningún mensaje fue encontrado</h3>
+          <p id="parrafo-mensaje" class="parrafo-mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+        <div class="boton-copiar">
+          <button class="copiar" id= boton-copiar onclick="copiar()">Copiar</button>
+        </div>
+      </div>
+    </section>   
+  </main>
+  <footer> 
+    Desarrollado por Daniela FV - daniela007@gmail.com
+  </footer>
+  <script src="app.js"></script> 
+    
+</body>
+
+
+</html>
